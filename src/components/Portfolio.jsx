@@ -1,36 +1,48 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import tourist from "../assets/portfolio/tourist.png";
+import carLeader from "../assets/portfolio/carLeader.png";
+import docfind from "../assets/portfolio/docfind.png";
+import triper from "../assets/portfolio/triper.png";
+import itSchool from "../assets/portfolio/itSchool.png";
+import portfolio from "../assets/portfolio/portfolio.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: tourist,
+      liveLink: "https://tourist73.netlify.app/",
+      code: "https://github.com/Rakibhasan-programmer/tourist"
     },
     {
       id: 2,
-      src: reactParallax,
+      src: carLeader,
+      liveLink: "https://youthful-babbage-d34eb6.netlify.app/",
+      code: "https://github.com/Rakibhasan-programmer/car-selling-website"
     },
     {
       id: 3,
-      src: navbar,
+      src: docfind,
+      liveLink: "https://docfind-healthcare.netlify.app/",
+      code: "https://github.com/Rakibhasan-programmer/healthcare-website"
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: itSchool,
+      liveLink: "https://it-school73.netlify.app/",
+      code: "https://github.com/Rakibhasan-programmer/course-selling-website"
     },
     {
       id: 5,
-      src: installNode,
+      src: triper,
+      liveLink: "https://triper-12fcb.web.app/",
+      code: "https://github.com/Rakibhasan-programmer/tourism-website"
     },
     {
       id: 6,
-      src: reactWeather,
+      src: portfolio,
+      liveLink: "https://rakibulhaasan.netlify.app/",
+      code: "https://github.com/Rakibhasan-programmer/portfolio"
     },
   ];
 
@@ -48,8 +60,8 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+          {portfolios.map(({ id, src, liveLink, code }) => (
+            <div key={id} className="shadow-md shadow-gray-600 rounded-lg overflow-hidden">
               <img
                 src={src}
                 alt=""
@@ -57,10 +69,14 @@ const Portfolio = () => {
               />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a href={liveLink} target="_blank" rel="noreferrer">
                   Demo
+                  </a>
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a href={code} target="_blank" rel="noreferrer">
                   Code
+                  </a>
                 </button>
               </div>
             </div>
