@@ -61,19 +61,19 @@ const Portfolio = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, liveLink, code }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg overflow-hidden">
+            <div key={id} className="shadow-md shadow-sky-500 rounded-lg overflow-hidden">
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+              <div className="flex items-center justify-center py-4">
+                <button className="w-1/2 rounded border-2 text-cyan-500 border-sky-500 px-3 py-1 m-4 duration-200 hover:scale-105">
                   <a href={liveLink} target="_blank" rel="noreferrer">
                   Demo
                   </a>
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className="w-1/2 m-4 border-2 rounded bg-cyan-500 border-sky-500 px-3 py-1 duration-200 hover:scale-105 text-black">
                   <a href={code} target="_blank" rel="noreferrer">
                   Code
                   </a>
