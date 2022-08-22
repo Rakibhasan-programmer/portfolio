@@ -17,7 +17,7 @@ export default function App() {
     window.addEventListener('load', function(){
       setTimeout(() => {
         setLoader(false);
-      }, 4000);
+      }, 3000);
     })
   })
   return (
