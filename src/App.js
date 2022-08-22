@@ -6,9 +6,9 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
-
-import { useEffect, useState } from "react";
 import Loader from "./components/loader/Loader";
+import { useEffect, useState } from "react";
+
 
 
 export default function App() {
@@ -34,7 +34,6 @@ export default function App() {
         <Contact />
       </>
     }
-    
     </>
   )
 }
