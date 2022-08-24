@@ -12,7 +12,7 @@ const Portfolio = () => {
       id: 1,
       src: tourist,
       name: "Travel Website",
-      scroll: "fade-right",
+      scroll: "fade-up",
       liveLink: "https://tourist73.netlify.app/",
       code: "https://github.com/Rakibhasan-programmer/tourist",
     },
@@ -28,7 +28,7 @@ const Portfolio = () => {
       id: 3,
       src: docfind,
       name: "Hospital Website",
-      scroll: "fade-left",
+      scroll: "fade-down",
       liveLink: "https://docfind-healthcare.netlify.app/",
       code: "https://github.com/Rakibhasan-programmer/healthcare-website",
     },
@@ -36,7 +36,7 @@ const Portfolio = () => {
       id: 4,
       src: itSchool,
       name: "Course Selling Website",
-      scroll: "fade-right",
+      scroll: "fade-up",
       liveLink: "https://it-school73.netlify.app/",
       code: "https://github.com/Rakibhasan-programmer/course-selling-website",
     },
@@ -52,7 +52,7 @@ const Portfolio = () => {
       id: 6,
       src: portfolio,
       name: "Fully Functional Portfolio",
-      scroll: "fade-left",
+      scroll: "fade-down",
       liveLink: "https://rakibulhaasan.netlify.app/",
       code: "https://github.com/Rakibhasan-programmer/portfolio",
     },
@@ -75,7 +75,7 @@ const Portfolio = () => {
           {portfolios.map(({ id, src, liveLink, code, name, scroll }) => (
             <div
               data-aos={scroll}
-              data-aos-easing="ease-in-out"
+              data-aos-easing="linear"
               data-aos-duration="1500"
               key={id}
               className="shadow-md shadow-sky-500 rounded-lg overflow-hidden"

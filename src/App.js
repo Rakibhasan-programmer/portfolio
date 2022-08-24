@@ -16,7 +16,7 @@ export default function App() {
   const [loader, setLoader] = useState(true);
 
   useEffect(function () {
-    // Aos.init();
+    Aos.init();
     setTimeout(function () {
       setLoader(false);
     }, 2000);

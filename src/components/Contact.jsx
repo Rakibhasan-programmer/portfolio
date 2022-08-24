@@ -21,7 +21,7 @@ const Contact = () => {
             className=" flex flex-col w-full md:w-3/4"
           >
             <input
-              data-aos="fade-right"
+              data-aos="zoom-in"
               data-aos-easing="ease-in-out"
               data-aos-duration="1500"
               type="text"
@@ -30,7 +30,7 @@ const Contact = () => {
               className="p-2 bg-transparent border-2 border-gray-700 rounded-md text-white focus:outline-none focus:border-sky-500"
             />
             <input
-              data-aos="fade-left"
+              data-aos="zoom-in"
               data-aos-easing="ease-in-out"
               data-aos-duration="1500"
               type="text"
