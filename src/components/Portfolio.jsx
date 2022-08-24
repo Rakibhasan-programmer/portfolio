@@ -13,42 +13,42 @@ const Portfolio = () => {
       src: tourist,
       name: "Travel Website",
       liveLink: "https://tourist73.netlify.app/",
-      code: "https://github.com/Rakibhasan-programmer/tourist"
+      code: "https://github.com/Rakibhasan-programmer/tourist",
     },
     {
       id: 2,
       src: carLeader,
       name: "Car selling Website",
       liveLink: "https://youthful-babbage-d34eb6.netlify.app/",
-      code: "https://github.com/Rakibhasan-programmer/car-selling-website"
+      code: "https://github.com/Rakibhasan-programmer/car-selling-website",
     },
     {
       id: 3,
       src: docfind,
       name: "Hospital Website",
       liveLink: "https://docfind-healthcare.netlify.app/",
-      code: "https://github.com/Rakibhasan-programmer/healthcare-website"
+      code: "https://github.com/Rakibhasan-programmer/healthcare-website",
     },
     {
       id: 4,
       src: itSchool,
       name: "Course Selling Website",
       liveLink: "https://it-school73.netlify.app/",
-      code: "https://github.com/Rakibhasan-programmer/course-selling-website"
+      code: "https://github.com/Rakibhasan-programmer/course-selling-website",
     },
     {
       id: 5,
       src: triper,
       name: "Travel Website fullstack",
       liveLink: "https://triper-12fcb.web.app/",
-      code: "https://github.com/Rakibhasan-programmer/tourism-website"
+      code: "https://github.com/Rakibhasan-programmer/tourism-website",
     },
     {
       id: 6,
       src: portfolio,
       name: "Fully Functional Portfolio",
       liveLink: "https://rakibulhaasan.netlify.app/",
-      code: "https://github.com/Rakibhasan-programmer/portfolio"
+      code: "https://github.com/Rakibhasan-programmer/portfolio",
     },
   ];
 
@@ -67,22 +67,28 @@ const Portfolio = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
           {portfolios.map(({ id, src, liveLink, code, name }) => (
-            <div key={id} className="shadow-md shadow-sky-500 rounded-lg overflow-hidden">
+            <div
+              data-aos="fade-up"
+              key={id}
+              className="shadow-md shadow-sky-500 rounded-lg overflow-hidden"
+            >
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <h5 className="text-2xl text-bold pb-3 pt-5 text-gray-400 ml-3">{name}</h5>
+              <h5 className="text-2xl text-bold pb-3 pt-5 text-gray-400 ml-3">
+                {name}
+              </h5>
               <div className="flex items-center justify-center pb-4">
                 <button className="w-1/2 rounded border-2 text-cyan-500 border-sky-500 px-3 py-1 m-4 duration-200 hover:scale-105">
                   <a href={liveLink} target="_blank" rel="noreferrer">
-                  Demo
+                    Demo
                   </a>
                 </button>
                 <button className="w-1/2 m-4 border-2 rounded bg-cyan-500 border-sky-500 px-3 py-1 duration-200 hover:scale-105 text-black">
                   <a href={code} target="_blank" rel="noreferrer">
-                  Code
+                    Code
                   </a>
                 </button>
               </div>

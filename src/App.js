@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
@@ -8,34 +8,37 @@ import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 import Loader from "./components/loader/Loader";
 import { useEffect, useState } from "react";
-
-
+import Footer from "./components/Footer";
+import 'aos/dist/aos.css';
+import Aos from "aos";
 
 export default function App() {
   const [loader, setLoader] = useState(true);
-  useEffect(() => {
-    window.addEventListener('load', function(){
-      setTimeout(() => {
-        setLoader(false);
-      }, 3000);
-    })
-  }, [])
+
+  useEffect(function () {
+    Aos.init();
+    setTimeout(function () {
+      setLoader(false);
+    }, 2000);
+  }, []);
+
   return (
     <>
-    {
-      loader ? <Loader /> :
-      <>
-        <Navbar />
-        <Home />
-        <SocialLinks />
-        <About />
-        <Portfolio />
-        <Experience />
-        <Contact />
-      </>
-    }
+      {loader ? (
+        <Loader />
+      ) : (
+        <>
+          <Navbar />
+          <Home />
+          <SocialLinks />
+          <About />
+          <Portfolio />
+          <Experience />
+          <Contact />
+          <Footer />
+        </>
+      )}
     </>
-  )
+  );
 }
-
 
