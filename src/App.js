@@ -9,14 +9,14 @@ import SocialLinks from "./components/SocialLinks";
 import Loader from "./components/loader/Loader";
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
-import 'aos/dist/aos.css';
-import Aos from "aos";
+// import 'aos/dist/aos.css';
+// import Aos from "aos";
 
 export default function App() {
   const [loader, setLoader] = useState(true);
 
   useEffect(function () {
-    Aos.init();
+    // Aos.init();
     setTimeout(function () {
       setLoader(false);
     }, 2000);
