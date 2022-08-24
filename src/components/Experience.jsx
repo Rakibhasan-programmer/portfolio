@@ -16,48 +16,56 @@ const Experience = () => {
       src: html,
       title: "HTML",
       style: "shadow-orange-500",
+      scroll: "zoom-in-down"
     },
     {
       id: 2,
       src: css,
       title: "CSS",
       style: "shadow-blue-500",
+      scroll: "zoom-in-down"
     },
     {
       id: 3,
       src: javascript,
       title: "JavaScript",
       style: "shadow-yellow-500",
+      scroll: "zoom-in-down"
     },
     {
       id: 4,
       src: reactImage,
       title: "React JS",
       style: "shadow-blue-600",
+      scroll: "zoom-in-down"
     },
     {
       id: 5,
       src: tailwind,
       title: "Tailwind CSS",
       style: "shadow-sky-400",
+      scroll: "zoom-in-up"
     },
     {
       id: 6,
       src: nextjs,
       title: "Next JS",
       style: "shadow-white",
+      scroll: "zoom-in-up"
     },
     {
       id: 7,
       src: node,
       title: "Node JS",
       style: "shadow-green-400",
+      scroll: "zoom-in-up"
     },
     {
       id: 8,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
+      scroll: "zoom-in-up"
     },
   ];
 
@@ -75,9 +83,12 @@ const Experience = () => {
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0">
-          {techs.map(({ id, src, title, style }) => (
+          {techs.map(({ id, src, title, style, scroll }) => (
             <div
               key={id}
+              data-aos={scroll}
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={src} alt="" className="w-20 mx-auto" />

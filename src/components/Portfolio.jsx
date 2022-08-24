@@ -12,6 +12,7 @@ const Portfolio = () => {
       id: 1,
       src: tourist,
       name: "Travel Website",
+      scroll: "fade-right",
       liveLink: "https://tourist73.netlify.app/",
       code: "https://github.com/Rakibhasan-programmer/tourist",
     },
@@ -19,6 +20,7 @@ const Portfolio = () => {
       id: 2,
       src: carLeader,
       name: "Car selling Website",
+      scroll: "fade-down",
       liveLink: "https://youthful-babbage-d34eb6.netlify.app/",
       code: "https://github.com/Rakibhasan-programmer/car-selling-website",
     },
@@ -26,6 +28,7 @@ const Portfolio = () => {
       id: 3,
       src: docfind,
       name: "Hospital Website",
+      scroll: "fade-left",
       liveLink: "https://docfind-healthcare.netlify.app/",
       code: "https://github.com/Rakibhasan-programmer/healthcare-website",
     },
@@ -33,6 +36,7 @@ const Portfolio = () => {
       id: 4,
       src: itSchool,
       name: "Course Selling Website",
+      scroll: "fade-right",
       liveLink: "https://it-school73.netlify.app/",
       code: "https://github.com/Rakibhasan-programmer/course-selling-website",
     },
@@ -40,6 +44,7 @@ const Portfolio = () => {
       id: 5,
       src: triper,
       name: "Travel Website fullstack",
+      scroll: "fade-up",
       liveLink: "https://triper-12fcb.web.app/",
       code: "https://github.com/Rakibhasan-programmer/tourism-website",
     },
@@ -47,6 +52,7 @@ const Portfolio = () => {
       id: 6,
       src: portfolio,
       name: "Fully Functional Portfolio",
+      scroll: "fade-left",
       liveLink: "https://rakibulhaasan.netlify.app/",
       code: "https://github.com/Rakibhasan-programmer/portfolio",
     },
@@ -66,9 +72,11 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, liveLink, code, name }) => (
+          {portfolios.map(({ id, src, liveLink, code, name, scroll }) => (
             <div
-              data-aos="fade-up"
+              data-aos={scroll}
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1500"
               key={id}
               className="shadow-md shadow-sky-500 rounded-lg overflow-hidden"
             >
