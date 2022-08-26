@@ -27,7 +27,7 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="p-2 bg-transparent border-2 border-gray-700 rounded-md text-white focus:outline-none focus:border-sky-500"
+              className="p-2 bg-transparent border-2 border-gray-700 rounded-md text-white focus:outline-none focus:border-sky-500" required
             />
             <input
               data-aos="zoom-in"
@@ -36,16 +36,16 @@ const Contact = () => {
               type="text"
               name="email"
               placeholder="Enter your email"
-              className="my-4 p-2 bg-transparent border-2 border-gray-700 rounded-md text-white focus:outline-none focus:border-sky-500"
+              className="my-4 p-2 bg-transparent border-2 border-gray-700 rounded-md text-white focus:outline-none focus:border-sky-500" required
             />
             <textarea
               data-aos="zoom-in"
               data-aos-easing="ease-in-out"
               data-aos-duration="1500"
               name="message"
-              placeholder="Enter your message"
+              placeholder="Your message...."
               rows="8"
-              className="p-2 bg-transparent border-2 border-gray-700 rounded-md text-white focus:outline-none focus:border-sky-500"
+              className="p-2 bg-transparent border-2 border-gray-700 rounded-md text-white focus:outline-none focus:border-sky-500" required
             ></textarea>
 
             <button data-aos="zoom-out" data-aos-easing="ease-in-out"
