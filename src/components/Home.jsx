@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../assets/heroImage.webp'
+import image from '../assets/profile.gif'
 import {MdOutlineKeyboardArrowRight} from 'react-icons/md'
 import {Link} from 'react-scroll'
 
@@ -20,7 +20,7 @@ const Home = () => {
                 </div>
             </div>
             <div data-aos = "fade-up" data-aos-easing="ease-in-out" data-aos-duration="1500">
-                <img src={image} alt="" className='rounded-2xl mx-auto w-2/3 md:w-full'  />
+                <img src={image} alt="Gif" className='md:pl-10 rounded-2xl mx-auto w-2/3 md:w-full'  />
             </div>
         </div>
     </div>
